@@ -48,8 +48,6 @@ export class ClientesFormComponent implements OnInit {
         this.errors = [];
       }, errorResponse => {this.errors=['Erro ao atualizar cliente.']})
     }
-
-
     this.servico
       .salvar(this.cliente)
       .subscribe(resposta => {
